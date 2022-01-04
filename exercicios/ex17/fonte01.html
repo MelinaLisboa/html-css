@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>  
+    <style>
+        body{
+            /*font-family: Arial, Helvetica, sans-serif;*/ /*safe combination*/
+            font-family: sans-serif;/*fonte sem serifa, todos os dispositivos vao ler*/
+
+            /*
+            Medidas Absolutas: px
+            Medidas Relativas: em
+            16px = 1em (normalmente)
+            */
+            font-size: 1em;
+        }
+
+        h1{
+            /*font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            /*Shorthand*/
+            /*Ordem: font-style font-weight font-size font-family*/
+            font: italic bolder 3em 'Times New Roman', Times, serif;
+        }
+    </style>  
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore quia, unde sint quae neque dolorum ex consequatur adipisci explicabo vitae possimus eaque iste velit cumque error repudiandae saepe? Ipsum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium in aspernatur facere amet voluptatem odio, harum alias possimus sint! Doloribus aliquid ducimus assumenda accusamus repellendus iusto nam placeat molestias.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minus beatae optio dolore deserunt, dignissimos facere pari atur amet eius fugiat ipsam, ex porro animi aliquam libero nesciunt. Laudantium, odio non.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi iure ipsam ad vitae eveniet magni corrupti, veniam placeat pariatur alias. Perferendis id, sed a illo distinctio ab sint velit odio?</p>
+</body>
+</html>

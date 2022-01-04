@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/flower-favicon.ico" type="image/x-icon">
+    <title>Meu primeiro exercicio</title>
+</head>
+<body>
+    <h1>Olá Mundo!</h1>    
+    <hr>
+    <p>Esse é o meu primeiro documento html! Oie teste</p>
+    <p>Emoji: &#x2764; &#x1F525;</p>
+    <h2>Teste de imagem</h2>
+    <p>Imagem na mesma pasta:</p>
+    <img src="logo-html.png" alt="Logo HTML5">
+    <p>Imagem na subpasta</p>
+    <img src="imagens/logo-css.png" alt="Logo CSS3">
+    <p>Também podemos carregar imagens externas</p>
+    <img src="https://bognarjunior.files.wordpress.com/2018/01/1crcyaithv7aiqh1z93v99q.png" alt="Logo Javascript">
+    <h2>uso de negrito / destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semantico)</p>
+    <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag strong (semantica)
+    </p>
+    <h2>itálico /enfase</h2>
+    <p>Nesta frase temos <i>termo em itálico</i>usando a tag i (não semantica)</p>
+    <!--ctrl+shift+P abb, escolher a tag e envelopar-->
+    <p>Nesta frase temos um <em>termo com enfase</em> (semantico)</p>
+    <!--Forma: css / Sentido: Html-->>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag mark</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small></p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos também marcar <ins>um texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois</p>
+    <p>Existe também o <u>sublinhado com a tag u</u> (não semantico)</p>
+    <h2>Texto sobescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subescrito</h2>
+    <p>Para escrever a formula da agua H<sub>2</sub>O</p>
+
+    <h2>Outras formatações</h2>
+    <h3>Código Fonte</h3>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em Javascript</p>
+    <!--tag code coloca fonte monoespaçada-->
+    <pre> <!--usa quebras de linha e espaços-->
+        <code>
+num = int(input('Digite um numero'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else
+    print(f'O número {num} é IMPAR')
+print('Fim do programa')
+        </code>
+    </pre>
+
+    <h3>Citações</h3>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h3>Citações completas</h3>
+    <p>Segundo o livro xxxxx:</p>
+    <!--cite: usado em mecanismos de busca-->
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptas aperiam dolorum, sunt, consectetur iusto vitae dolor vero provident nisi, ex eos quae eaque aliquam dignissimos. Vero pariatur quos quo!</blockquote>
+
+    <h3>Abreviações</h3>
+    <p>Estou estudando <abbr title="HiperText Markup Language">HTML</abbr> e <abbr title="Cascade Style Sheets">CSS</abbr>. Estou adorando!</p>
+
+    <h3>Texto invertido</h3>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML!</bdo></p>
+
+    <h2>Trabalhando com listas</h2>
+    <h3>Listas Ordenadas</h3>
+    <ol type="I">
+        <li>Acordar</li> <!--fechamento de li opcional no html5-->
+        <li>Tomar café
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>almoçar</li>
+        <li>ir pra casa</li>
+        <li>jantar</li>
+        <li>dormir</li>
+    </ol>
+
+    <h3>Listas não ordenadas</h3>
+    <ul type="square"> <!--disc circle square-->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>C</li>
+            <li>Visual Basic</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a">
+            <li>C#</li>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    <h3>Programas favoritos</h3>
+    <ol>
+        <li>TV</li>
+        <ul type="square">
+            <li>Sessão da Tarde</li>
+            <li>Video Show</li>
+            <li>Vale a pena ver de novo</li>
+        </ul>
+        <li>Neflix</li>
+        <ul type="square">
+            <li>Breaking bad</li>
+            <li>Sons of Anarchy</li>
+            <li>Game of Thrones</li>
+            <ul type="circle">
+                <li>Temporada 1</li>
+                <li>Temporada 2</li>
+            </ul>
+        </ul>
+    </ol>
+<h3>Lista de Definição</h3>
+<dl>
+    <dt>Html<dt>
+    <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+    <dt>CSS</dt>
+    <dd>Liguagem de marcação para a criação do design de um site</dd>
+    <dt>Javascript</dt>
+    <dd>Linguagem de Programação para a criação de interatividade de um site</dd>    
+</dl>
+
+<h2>Trabalhando com links</h2>
+<p>Você pode acessar meu <a href="https://github.com/MelinaLisboa" target="_blank" rel="external">repositório público no GitHub</a></p>
+<p>Você também pode acessar o <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal do Youtube do Gustavo Guanabara</a></p>
+<h2>Usando links internos</h2>
+<p>Esta é a primeira página do site. Se você quiser pode também acessar a <a href="pag002.html" rel="next">Página 2.</a></p>
+<p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next">página de notícias</a></p>
+
+<h2>Links para Download</h2>
+<ul>
+    <li><a href="livro/caderno.pdf" download="caderno.pdf" type="application/pdf">Baixar o livro em pdf</a></li>
+    <li><a href="livro/caderno.zip" type="application/zip">Baixar o livro compactado em zip</a></li>
+</ul>
+</body>
+</html>
